@@ -6,17 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BD5B48A62E55493400C0D4AF /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B48A52E55493400C0D4AF /* App.swift */; };
+		BD5B48A82E55493400C0D4AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B48A72E55493400C0D4AF /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BD5B48A22E55493400C0D4AF /* NSApplication++.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSApplication++.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5B48A52E55493400C0D4AF /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		BD5B48A72E55493400C0D4AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		BD5B48A42E55493400C0D4AF /* NSApplication++ */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "NSApplication++";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BD5B489F2E55493400C0D4AF /* Frameworks */ = {
@@ -32,7 +31,7 @@
 		BD5B48992E55493400C0D4AF = {
 			isa = PBXGroup;
 			children = (
-				BD5B48A42E55493400C0D4AF /* NSApplication++ */,
+				BD5B48B12E55496900C0D4AF /* NSApplication++ */,
 				BD5B48A32E55493400C0D4AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +42,15 @@
 				BD5B48A22E55493400C0D4AF /* NSApplication++.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BD5B48B12E55496900C0D4AF /* NSApplication++ */ = {
+			isa = PBXGroup;
+			children = (
+				BD5B48A72E55493400C0D4AF /* ContentView.swift */,
+				BD5B48A52E55493400C0D4AF /* App.swift */,
+			);
+			path = "NSApplication++";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +67,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				BD5B48A42E55493400C0D4AF /* NSApplication++ */,
 			);
 			name = "NSApplication++";
 			packageProductDependencies = (
@@ -119,6 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5B48A82E55493400C0D4AF /* ContentView.swift in Sources */,
+				BD5B48A62E55493400C0D4AF /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +255,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "NSApplication++/NSApplication__.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -264,6 +270,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_SUPPRESS_WARNINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -273,7 +280,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "NSApplication++/NSApplication__.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -289,6 +295,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_SUPPRESS_WARNINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
